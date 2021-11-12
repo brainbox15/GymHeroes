@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
 
     <link rel="stylesheet" href="index.css">
 
@@ -31,8 +31,10 @@
 
 
     </header>
-    <div id="header-img"><marquee behavior='alternate' direction="right">
-        <h1 id="intro">Welcome to GymHeroes, home of comfort</h1></marquee>
+    <div id="header-img">
+        <marquee behavior='alternate' direction="right">
+            <h1 id="intro">Welcome to GymHeroes, home of comfort</h1>
+        </marquee>
 
     </div>
 
@@ -53,7 +55,7 @@
         <div>
             <p class="rod"> PERSONAL TRAINING
                 (IN PERSON AND VIRTUAL)</p>
-           <a href="images/gym3.jpg"> <img src="images/gym3.jpg" alt="" class="gym"> </a>
+            <a href="images/gym3.jpg"> <img src="images/gym3.jpg" alt="" class="gym"> </a>
 
 
             <p>1 hour and ½ hour personal training sessions are available. Packages include: Single, 5, 10 and 20
@@ -71,7 +73,7 @@
                     (VIRTUAL ONLY)</p>
             </div>
             <div>
-              <a href="images/gym4.jpg"> <img src="images/gym4.jpg" alt="" class="gym"> </a> 
+                <a href="images/gym4.jpg"> <img src="images/gym4.jpg" alt="" class="gym"> </a>
             </div>
             <p>Join us online via ZOOM for an interactive virtual workout experience in the comfort of your own
                 home. Our current class schedule offers Core & Stretch, Body Weight Circuit Training, and Barre.</p>
@@ -87,7 +89,7 @@
                 <p class="rod">ATHLETIC PERFORMANCE COACHING</p>
             </div>
             <div>
-               <a href="images/gym5.jpg"> <img src="images/gym5.jpg" alt="" class="gym"> </a>
+                <a href="images/gym5.jpg"> <img src="images/gym5.jpg" alt="" class="gym"> </a>
             </div>
             <P>Advanced Wellness trainers and coaching team provides results-based personalized sports performance
                 and fitness programs for San Francisco athletes at all levels.</P>
@@ -113,10 +115,9 @@
         </div>
 
         <div>
-            <h1>WE’RE NOT LIKE ANY OTHER GYM IN THE WORLD</h1>
+            <h1 id="credit">WE’RE NOT LIKE ANY OTHER GYM IN THE WORLD</h1>
             <p>
                 There is nothing NOT to love about GymHeroes! </p>
-            <!-- The instructors, the people, the atmosphere, the challenging workouts... no day is the same at Firebrand, You're always being tested to push your limits and this team helps you reach your goals. There is no other family like the Firebrand Family.</p> -->
         </div>
 
     </div>
@@ -132,19 +133,14 @@
     <div class="box9">
         <nav>
             <div>
-                &copy; GymHeroes 2021. All rights reserved.
+                &copy; <span id="copyright"> GymHeroes 2021. All rights reserved.</span>
             </div>
             <div><a href="">Home</a><a href="">About</a><a href="">Contact</a><a href="">Privacy</a>
             </div>
         </nav>
 
-        <script>
-            menuIcon = document.getElementById('menu-icon')
-            Navigate = document.getElementById('navigate')
-            menuIcon.addEventListener('click', function () {
+        <script src="index.js">
 
-                Navigate.classList.toggle('show')
-            })
         </script>
 </body>
 
