@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+ 
+
+    }
+
+
+  
+
+    .logo{
+        width: 90px;
+        border-radius: 20px 20px 20px 20px;
+    }
+
+
+
+header{
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+position: sticky;
+top: 0;
+}
+
+
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5em;
+}
+  
+
+#container>div{
+    padding: 1em;
+    /* background-color: gray; */
+}
+
+
+
+.gym{
+    width: 100%;
+}
+
+    .box9 nav{
+        padding: 30px;
+        background: lightgray;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+   .box9 nav div a{
+        padding: 20px;
+        color: black;
+    }
+
+    nav div a{
+        padding: 15px;
+        color: black;
+    }
+    
+nav div a:hover{
+    color: #fff;
+}
+
+   a{
+       text-decoration: none;
+   }
+   
+
+
+
+        form{
+         background-color: rgb(88, 86, 86); 
+        display: inline-block;
+        padding: 20px;
+    }
+
+    input{
+        display: block;
+        margin: 10px;
+        padding: 5px;
+        outline:none;
+    }
+button{
+    padding: 10px;
+    background-color: rgb(236, 17, 17);
+    color: rgb(255, 255, 255);
+    outline: none;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+
+}
+
+
+label{
+    margin-bottom: 10px;
+    color: #fff;
+     
+}
+
+
+
+
+#intro{
+    color: #000;
+    padding-top: 2em;
+ /* position: absolute; */
+ /* left: 3em;
+ top: 5em; */
+}
+
+.rod{
+    margin-bottom: 10px;
+}
+
+#header-img{
+    height: 90vh;
+    background: url('images/gym1.jpg');
+    background-position: center;
+    background-size: cover;
+   margin-bottom: 5em;
+   /* position: relative; */
+    
+}
+
+
+
+#menu-icon{
+    display: none;
+    cursor: pointer;
+}
+
+
+@media(max-width:740px){
+    #menu-icon{
+        display: block;
+    }
+
+    header nav{
+     
+        position: absolute;
+        background: gray;
+        top: 0;
+        left: 0;
+        transform: translateY(100px);
+        transition: 0.5s ease-in transform;
+        padding: 30px 0;
+        width:100%;
+    }
+
+
+    #navigate div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .show{
+
+        transform: translateY(-430px);
+        
+    }
+
+    #header-img{
+      background-position: center;
+      background-size: cover;
+        
+    }
+
+
+
+
+}
+
+@media(max-width:855px){
+#container{
+    display: block;
+}  
+
+.gym{
+    width: 100%;
+}
+
+.box9 nav{
+    flex-direction: column;
+        }
+}
